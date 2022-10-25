@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>HTML Carla</title>
-<link rel="stylesheet" href="letras.css">
-<script src="letras.js"></script>
-</head>
-<body onload="onLoad()">
-    <div id="main">
-        <H1>el ahorcado :)</H1>
-
-        <img id="dibujo" src="img/hangman6.png">
-
-        <div id="palabra">_ _ _ _</div>
-
-        <div id="resultado"></div>
-            <br>
-            <div id="letras">
-                <!--aquí generar los botones con las letras-->
-            </div>
-
-        <p id="intentos"></p>
-
+<html lang="es">
+  <head>
+    
+    <title>El ahorcado</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="options-container"></div>
+      <div id="letter-container" class="letter-container hide"></div>
+      <div id="user-input-section"></div>
+      <canvas id="canvas"></canvas>
+      <div id="new-game-container" class="new-game-popup hide">
+        <div id="result-text"></div>
+        <button id="new-game-button">Juego nuevo</button>
+      </div>
     </div>
-
-</body>
+    <script src="letras.js"></script>
+  </body>
 </html>
