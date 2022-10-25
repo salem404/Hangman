@@ -1,4 +1,4 @@
-:root{
+:root {
   --main-color: #747eda;
 }
 
@@ -8,9 +8,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: var(--main-color);
 }
+
 .container {
   font-size: 16px;
   background-color: #ffffff;
@@ -24,16 +26,19 @@ body {
   border-radius: 0.6em;
   box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
 }
-#options-container {
+
+#introduccion-container {
   text-align: center;
 }
-#options-container div {
+
+#introduccion-container div {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 1.2em 0 2.4em 0;
 }
-#options-container button {
+
+#introduccion-container button {
   padding: 0.6em 1.2em;
   border: 3px solid #000000;
   background-color: #ffffff;
@@ -41,30 +46,35 @@ body {
   border-radius: 0.3em;
   text-transform: capitalize;
 }
-#options-container button:disabled {
+
+#introduccion-container button:disabled {
   border: 3px solid #808080;
   color: #808080;
   background-color: #efefef;
 }
-#options-container button.active {
+
+#introduccion-container button.active {
   background-color: var(--main-color);
   border: 3px solid #000000;
   color: #000000;
 }
-.letter-container {
+
+.letras-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.6em;
 }
-#letter-container button {
+
+#letras-container button {
   height: 2.4em;
   width: 2.4em;
   border-radius: 0.3em;
   background-color: #ffffff;
 }
-.new-game-popup {
+
+.nuevo-juego-popup {
   background-color: #ffffff;
   position: absolute;
   left: 0;
@@ -78,32 +88,38 @@ body {
   border-radius: 0.6em;
 }
 
-#user-input-section {
+#feedback {
   display: flex;
   justify-content: center;
   font-size: 1.8em;
   margin: 0.6em 0 1.2em 0;
 }
+
 canvas {
   display: block;
   margin: auto;
   border: 1px solid #000000;
 }
+
 .hide {
   display: none;
 }
-#result-text h2 {
+
+#resultado-text h2 {
   font-size: 1.8em;
   text-align: center;
 }
-#result-text p {
+
+#resultado-text p {
   font-size: 1.25em;
   margin: 1em 0 2em 0;
 }
-#result-text span {
+
+#resultado-text span {
   font-weight: 600;
 }
-#new-game-button {
+
+#nuevo-juego-button {
   font-size: 1.25em;
   padding: 0.5em 1em;
   background-color: var(--main-color);
@@ -111,9 +127,11 @@ canvas {
   color: #000000;
   border-radius: 0.2em;
 }
+
 .win-msg {
   color: #39d78d;
 }
+
 .lose-msg {
   color: #fe5152;
 }
