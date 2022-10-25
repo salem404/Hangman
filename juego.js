@@ -83,8 +83,9 @@ function palabra() {
   palabraElegida = document.getElementById("palabra").value
   palabraElegida = palabraElegida.toUpperCase()
 
-  //TODO: la mierda esa de regex
-  if (palabraElegida == "AAA") {
+  const regexPalabra = /^[a-zA-Z]+[a-zA-Z]+$/mg
+
+  if (!regexPalabra.test(palabraElegida)) {
     alert("Cagaste")
     location.reload()
   }
